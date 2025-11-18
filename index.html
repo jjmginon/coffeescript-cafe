@@ -13,132 +13,116 @@
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to CoffeeScript Café</h1>
-        <nav>
-            <ul>
+    <header class="header">
+        <h1 class="header__h1">CoffeeScript Café</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li>
-                    <a href="#about">About <abbr title="CoffeeScript Café">CSC</abbr></a>
+                    <a href="#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="#menu">Our Menu</a>
+                    <a href="hours.html">Hours</a>
                 </li>
                 <li>
-                    <a href="hours.html">Store Hours</a>
+                    <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html">About</a>
                 </li>
             </ul>
         </nav>
+    </header>
 
+    <section class="hero">
+        <h2 class="hero__h2">Welcome!</h2>
         <figure>
-            <img src="img/coffee-and-croissant-400x267.png" alt="Hot coffee and croissant on a plate"
-                title="Enjoy a warm cup of coffee with a fresh croissant" width="400" height="267">
-            <figcaption>
+            <img src="img/coffee-and-croissant-1000x667.png" alt="Hot coffee and croissant on a plate"
+                title="Enjoy a warm cup of coffee with a fresh croissant" width="1000" height="667">
+            <figcaption class="offscreen">
                 A cozy pairing of hot coffee and a buttery croissant
             </figcaption>
         </figure>
-    </header>
-    <hr>
-    <main>
-        <article id="about">
-            <h2>About <abbr title="CoffeeScript Café">CSC</abbr></h2>
-            <p>
-                <abbr title="CoffeeScript Café">CSC</abbr> was founded in <time datetime="2025">2025</time>. Our coffee
-                shop was built from a commitment to <strong>clarity, consistency, and customer-focused service</strong>
-                ☕💻🖱️. We hope our café offers a reliable experience and a welcoming space for all visitors.
-            </p>
-            <aside>
-                <h3>Coffee & Code Trivia</h3>
-                <details>
-                    <summary>Which programming language was named after coffee?</summary>
-                    <p>
-                        The programming language Java was named after coffee. It was officially released in <time
-                            datetime="1995">1995</time> by Sun Microsystems, and its name was inspired by Java coffee
-                        from Indonesia. (Source: <cite><a
-                                href="https://www.infoworld.com/article/2170044/so-why-did-they-decide-to-call-it-java-3.html"
-                                target="_blank">So why did they decide to call it Java? | InfoWorld</a></cite>)
-                    </p>
-                </details>
-            </aside>
-        </article>
-        <hr>
-        <article id="menu">
-            <h2>CoffeeScript Café Menu</h2>
-            <table>
-                <caption>Refactor Your Drink</caption>
+    </section>
+
+    <main class="main">
+        <article id="menu" class="main__article menu">
+            <h2 class="menu__h2">CoffeeScript Café Menu</h2>
+            <table class="menu__container">
+                <caption class="offscreen">Refactor Your Drink</caption>
                 <thead>
                     <tr>
-                        <th>Drink</th>
-                        <th scope="col">Size</th>
-                        <th scope="col">Price</th>
+                        <th class="menu__header" scope="col">Drink</th>
+                        <th class="menu__header" scope="col">Size</th>
+                        <th class="menu__header" scope="col">Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row" rowspan="3">
+                        <th class="menu__item menu__cf" scope="row" rowspan="3">
                             Java Coffee
                         </th>
-                        <td>Tall</td>
-                        <td>&#8369;120</td>
+                        <td class="menu__item">Tall</td>
+                        <td class="menu__item">&#8369;120</td>
                     </tr>
                     <tr>
-                        <td>Grande</td>
-                        <td>&#8369;150</td>
+                        <td class="menu__item">Grande</td>
+                        <td class="menu__item">&#8369;150</td>
                     </tr>
                     <tr>
-                        <td>Venti</td>
-                        <td>&#8369;180</td>
+                        <td class="menu__item">Venti</td>
+                        <td class="menu__item">&#8369;180</td>
                     </tr>
                     <tr>
-                        <th scope="row" rowspan="3">
+                        <th class="menu__item menu__fr" scope="row" rowspan="3">
                             ByteBlend Frappe
                         </th>
-                        <td>Tall</td>
-                        <td>&#8369;160</td>
+                        <td class="menu__item">Tall</td>
+                        <td class="menu__item">&#8369;160</td>
                     </tr>
                     <tr>
-                        <td>Grande</td>
-                        <td>&#8369;190</td>
+                        <td class="menu__item">Grande</td>
+                        <td class="menu__item">&#8369;190</td>
                     </tr>
                     <tr>
-                        <td>Venti</td>
-                        <td>&#8369;220</td>
+                        <td class="menu__item">Venti</td>
+                        <td class="menu__item">&#8369;220</td>
                     </tr>
                     <tr>
-                        <th scope="row" rowspan="3">
+                        <th class="menu__item menu__mt" scope="row" rowspan="3">
                             BubbleSort Milk Tea
                         </th>
-                        <td>Tall</td>
-                        <td>&#8369;130</td>
+                        <td class="menu__item">Tall</td>
+                        <td class="menu__item">&#8369;130</td>
                     </tr>
                     <tr>
-                        <td>Grande</td>
-                        <td>&#8369;160</td>
+                        <td class="menu__item">Grande</td>
+                        <td class="menu__item">&#8369;160</td>
                     </tr>
                     <tr>
-                        <td>Venti</td>
-                        <td>&#8369;190</td>
+                        <td class="menu__item">Venti</td>
+                        <td class="menu__item">&#8369;190</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3">
+                        <td class="menu__item menu__ds" colspan="3">
                             Queue-issant &amp; ParsePasta &#8369;275
                         </td>
                     </tr>
                 </tfoot>
             </table>
         </article>
-        <br>
-        <p>
+
+        <p class="center">
             <a href="#">Back To Top</a>
         </p>
     </main>
     <hr>
-    <footer>
-        <p>Copyright &copy; CoffeeScript Café</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span>
+            <span class="nowrap">CoffeeScript Café</span>
+        </p>
     </footer>
 </body>
 
