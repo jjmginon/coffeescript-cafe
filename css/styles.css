@@ -111,13 +111,13 @@ html {
 }
 
 body {
-    background-color: var(--BODY-BGCOLOR);
-    color: var(--FONT-COLOR);
     min-height: 100vh;
     max-width: 720px;
     margin: 0 auto;
     border-left: var(--BORDERS);
     border-right: var(--BORDERS);
+    color: var(--FONT-COLOR);
+    background-color: var(--BODY-BGCOLOR);
     box-shadow: 0 0 10px var(--BORDER-COLOR);
 }
 
@@ -160,25 +160,25 @@ a:active {
 }
 
 .header__h1 {
-    text-align: center;
-    background-color: var(--HEADER-BGCOLOR);
-    color: var(--HEADER-COLOR);
     padding: var(--PADDING-Y) var(--PADDING-X);
+    text-align: center;
+    color: var(--HEADER-COLOR);
+    background-color: var(--HEADER-BGCOLOR);
 }
 
 .header__nav {
-    background-color: var(--NAV-BGCOLOR);
     border-bottom: var(--BORDERS);
     font-weight: bold;
+    background-color: var(--NAV-BGCOLOR);
     box-shadow: 0 6px 5px -5px var(--BORDER-COLOR);
 }
 
 .header__ul {
-    padding: var(--PADDING-Y) var(--PADDING-X);
-    list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
+    padding: var(--PADDING-Y) var(--PADDING-X);
+    list-style-type: none;
 }
 
 /* || HERO */
@@ -188,13 +188,13 @@ a:active {
 }
 
 .hero__h2 {
-    background-color: var(--HERO-BGCOLOR);
-    color: var(--HERO-COLOR);
-    padding: 0.25em 0.5em;
-    text-shadow: 2px 2px 5px var(--BORDER-COLOR);
     position: absolute;
     top: -100px;
     left: 30px;
+    padding: 0.25em 0.5em;
+    color: var(--HERO-COLOR);
+    text-shadow: 2px 2px 5px var(--BORDER-COLOR);
+    background-color: var(--HERO-BGCOLOR);
     animation: showWelcome 0.5s ease-in-out 1s forwards;
 }
 
@@ -203,10 +203,10 @@ a:active {
 .footer {
     position: sticky;
     bottom: 0;
-    background-color: var(--FOOTER-BGCOLOR);
-    color: var(--FOOTER-COLOR);
     padding: var(--PADDING-Y) var(--PADDING-X);
+    color: var(--FOOTER-COLOR);
     text-align: center;
+    background-color: var(--FOOTER-BGCOLOR);
 }
 
 /* || MAIN */
@@ -259,17 +259,17 @@ a:active {
 
 .contact__input,
 .contact__textarea {
-    padding: 0.5em;
-    border-radius: var(--BORDER-RADIUS);
-    border-width: 2px;
     width: 100%;
+    padding: 0.5em;
+    border-width: 2px;
+    border-radius: var(--BORDER-RADIUS);
 }
 
 .contact__button {
     padding: 0.5em;
     border-radius: var(--BORDER-RADIUS);
-    background-color: var(--HIGHLIGHT-COLOR);
     color: var(--BUTTON-COLOR);
+    background-color: var(--HIGHLIGHT-COLOR);
 }
 
 /* || HOURS */
@@ -279,8 +279,8 @@ a:active {
 }
 
 .hours__dl {
-    text-align: center;
     line-height: 1.5;
+    text-align: center;
 }
 
 /* || MENU */
@@ -333,11 +333,11 @@ tr {
 .menu__mt,
 .menu__ds,
 .menu__header {
-    color: var(--HIGHLIGHT-COLOR);
-    font-weight: bold;
-    height: 100%;
     display: grid;
     place-content: center;
+    height: 100%;
+    font-weight: bold;
+    color: var(--HIGHLIGHT-COLOR);
 }
 
 .menu__header,
@@ -361,8 +361,8 @@ thead th:last-child {
 }
 
 tfoot td {
-    border-bottom-left-radius: var(--BORDER-RADIUS);
     border-bottom-right-radius: var(--BORDER-RADIUS);
+    border-bottom-left-radius: var(--BORDER-RADIUS);
 }
 
 /* || KEYFRAMES */
