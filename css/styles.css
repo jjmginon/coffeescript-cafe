@@ -265,7 +265,12 @@ a:active {
     border-radius: var(--BORDER-RADIUS);
 }
 
+.button-container {
+    display: flex;
+}
+
 .contact__button {
+    width: 100%;
     padding: 0.5em;
     border-radius: var(--BORDER-RADIUS);
     color: var(--BUTTON-COLOR);
