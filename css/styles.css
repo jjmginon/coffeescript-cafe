@@ -267,14 +267,38 @@ a:active {
 
 .button-container {
     display: flex;
+    gap: 1rem
 }
 
 .contact__button {
     width: 100%;
-    padding: 0.5em;
+    padding: 0.75em 1.25em;
+    border: none;
     border-radius: var(--BORDER-RADIUS);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    cursor: pointer;
     color: var(--BUTTON-COLOR);
-    background-color: var(--HIGHLIGHT-COLOR);
+    background: var(--HIGHLIGHT-COLOR);
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact__button:hover,
+.contact__button:focus-visible {
+    background-color: var(--LINK-HOVER);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.contact__button:active {
+    transform: translateY(0);
+    background-color: var(--LINK-ACTIVE);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact__button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 /* || HOURS */
