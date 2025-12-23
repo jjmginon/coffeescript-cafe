@@ -28,7 +28,7 @@ textarea {
     /* FONTS */
     --FF: "Lato", sans-serif;
     --FF-HEADINGS: "IBM Plex Mono", monospace;
-    --FS: clamp(1rem, 2.2vh, 1.5rem);
+    --FS: clamp(1rem, 2vh, 1.5rem);
 
     /* COLORS */
     --BGCOLOR-FADE: #d3a789;
@@ -58,7 +58,7 @@ textarea {
 
     /* STANDARD PADDING */
     --PADDING-X: 2.75%;
-    --PADDING-Y: 0.25em;
+    --PADDING-Y: 0.5em;
 
     /* STANDARD MARGIN */
     --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
@@ -216,7 +216,7 @@ a:active {
 }
 
 .main__article {
-    scroll-margin-top: 6.5rem;
+    scroll-margin-top: 8rem;
     margin: var(--MARGIN);
 }
 
