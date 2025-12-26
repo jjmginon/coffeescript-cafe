@@ -418,13 +418,22 @@ tfoot td {
 
 /* || MEDIA QUERIES */
 
-@media screen AND (min-width: 581.99px) {
+@media screen AND (max-width: 346.99px) {
+    html {
+        font-size: 0.875rem;
+        ;
+    }
+}
+
+@media screen AND (min-width: 499.99px) {
     .header__h1::before {
-        content: '☕ ';
+        content: '☕';
+        margin-right: 0.5rem;
     }
 
     .header__h1::after {
-        content: ' 📜';
+        content: '📜';
+        margin-left: 0.5rem;
     }
 
     .hero__h2 {
