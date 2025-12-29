@@ -418,14 +418,13 @@ tfoot td {
 
 /* || MEDIA QUERIES */
 
-@media screen AND (max-width: 346.99px) {
+@media screen and (max-width: 346.99px) {
     html {
         font-size: 0.875rem;
-        ;
     }
 }
 
-@media screen AND (min-width: 499.99px) {
+@media screen and (min-width: 499.99px) {
     .header__h1::before {
         content: '☕';
         margin-right: 0.5rem;
