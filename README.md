@@ -1,5 +1,7 @@
 # CoffeeScript Café ☕📜
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c593ab57-24a6-4365-bb60-c918176562f1/deploy-status)](https://app.netlify.com/projects/coffeescript-cafe/deploys)
+
 CoffeeScript Café is a beginner‑friendly HTML5 & CSS project inspired by [Dave Gray’s HTML5 Website Project for Beginners](https://youtu.be/T5PD8ofhiug?si=Tr1ZCSGN8KxLxA9Y) and [CSS Complete Project for Beginners](https://youtu.be/cMN2Odm5ieA?si=Cn2CLjz7s1Kx3RXS).  
 While the format follows his teaching style, all content (menu items, images, copywriting, and branding) is original — designed to showcase accessibility‑first development, performance‑optimized styling, and recruiter‑friendly polish.
 
