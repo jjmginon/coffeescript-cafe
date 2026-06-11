@@ -279,19 +279,6 @@ a:focus-visible {
             rgba(14, 11, 9, 0.15) 100%);
 }
 
-@media (prefers-color-scheme: light) {
-    .hero__img {
-        filter: brightness(0.85);
-    }
-
-    .hero__overlay {
-        background: linear-gradient(to top,
-                rgba(245, 240, 232, 0.88) 0%,
-                rgba(245, 240, 232, 0.55) 50%,
-                rgba(245, 240, 232, 0.1) 100%);
-    }
-}
-
 .hero__content {
     position: absolute;
     bottom: 0;
