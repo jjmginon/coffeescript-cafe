@@ -6,65 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="JJ Ginon">
     <meta name="description"
-        content="View CoffeeScript Café's store hours and plan your visit. We're open daily for your caffeine routines.">
-    <title>CoffeeScript Café &ndash; Store Hours</title>
+        content="CoffeeScript Café is open seven days a week. View our weekly schedule and plan your visit.">
+    <title>CoffeeScript Café &ndash; Hours</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__h1">CoffeeScript Café</h1>
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/#menu">Menu</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__inner">
+            <p class="header__brand">
+                CoffeeScript <span class="header__brand-accent">Café</span>
+            </p>
+            <nav class="header__nav" aria-label="Primary navigation">
+                <ul class="header__nav-list">
+                    <li><a class="header__nav-link" href="/">Home</a></li>
+                    <li><a class="header__nav-link header__nav-link--active" href="hours.html">Hours</a></li>
+                    <li><a class="header__nav-link" href="contact.html">Contact</a></li>
+                    <li><a class="header__nav-link" href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="hero">
-        <h2 class="hero__h2">Store Hours</h2>
-        <figure>
-            <img src="img/cup-of-cappuccino-1000x667.png" alt="Cup of cappuccino with heart-shaped latte art"
-                title="Cappuccino with heart-shaped foam design" width="1000" height="667">
-            <figcaption class="offscreen">
+        <figure class="hero__figure">
+            <img class="hero__img" src="img/cup-of-cappuccino-2000x1334.png"
+                alt="A cappuccino with delicate heart-shaped latte art in a ceramic cup" width="2000" height="1334">
+            <figcaption class="sr-only">
                 Warm cappuccino topped with heart-shaped latte art
             </figcaption>
         </figure>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">We're open</p>
+            <h2 class="hero__heading">Hours</h2>
+            <p class="hero__sub">Seven days a week. No downtime, just uptime.</p>
+        </div>
     </section>
 
     <main class="main">
         <article class="main__article hours">
-            <h3>Our Weekly Schedule</h3>
-            <p class="hours__p">
-                Open 7 days a week&mdash;no downtime, just uptime.
-            </p>
-            <dl class="hours__dl">
-                <dt>Monday&ndash;Friday</dt>
-                <dd><time datetime="06:00">6:00 AM</time>&ndash;<time datetime="22:00">10:00 PM</time></dd>
-                <dt>Saturday&ndash;Sunday</dt>
-                <dd><time datetime="06:00">6:00 AM</time>&ndash;<time datetime="23:30">11:30 PM</time></dd>
+            <header class="section-header">
+                <p class="section-header__eyebrow">Weekly schedule</p>
+                <h2 class="section-header__heading">When to find us</h2>
+                <div class="section-header__rule" aria-hidden="true"></div>
+            </header>
+
+            <dl class="hours__schedule">
+                <div class="hours__schedule-row">
+                    <dt class="hours__day">Monday &ndash; Friday</dt>
+                    <dd class="hours__time">
+                        <time datetime="06:00">6:00 AM</time>
+                        &ndash;
+                        <time datetime="22:00">10:00 PM</time>
+                    </dd>
+                </div>
+                <div class="hours__schedule-row">
+                    <dt class="hours__day">Saturday &ndash; Sunday</dt>
+                    <dd class="hours__time">
+                        <time datetime="06:00">6:00 AM</time>
+                        &ndash;
+                        <time datetime="23:30">11:30 PM</time>
+                    </dd>
+                </div>
             </dl>
+
+            <p class="hours__note">
+                Last orders are taken 15 minutes before closing. Holiday hours may vary — follow us for updates.
+            </p>
         </article>
-    </main>
-    <footer class="footer">
-        <p>
-            <span class="nowrap">Copyright &copy; <time id="year" datetime="2025">2025</time></span>
-            <span class="nowrap">CoffeeScript Café</span>
+
+        <p class="back-top">
+            <a href="#top">Back to top &uarr;</a>
         </p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__copy">
+                &copy; <time id="year" datetime="2025">2025</time>
+                <span class="footer__sep" aria-hidden="true">&middot;</span>
+                CoffeeScript Café
+            </p>
+        </div>
     </footer>
+
 </body>
 
 </html>

@@ -6,95 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="JJ Ginon">
     <meta name="description"
-        content="Have a question or comment? Contact CoffeeScript Café&mdash;we're available to respond to your messages with care and clarity.">
-    <title>CoffeeScript Café &ndash; Contact Us</title>
+        content="Get in touch with CoffeeScript Café. Visit us at Bonifacio Global City or send us a message — we read everything.">
+    <title>CoffeeScript Café &ndash; Contact</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__h1">CoffeeScript Café</h1>
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/#menu">Menu</a>
-                </li>
-                <li>
-                    <a href="hours.html">Hours</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__inner">
+            <p class="header__brand">
+                CoffeeScript <span class="header__brand-accent">Café</span>
+            </p>
+            <nav class="header__nav" aria-label="Primary navigation">
+                <ul class="header__nav-list">
+                    <li><a class="header__nav-link" href="/">Home</a></li>
+                    <li><a class="header__nav-link" href="hours.html">Hours</a></li>
+                    <li><a class="header__nav-link header__nav-link--active" href="contact.html">Contact</a></li>
+                    <li><a class="header__nav-link" href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="hero">
-        <h2 class="hero__h2">Contact Us</h2>
-        <figure>
-            <img src="img/coffee-up-close-1000x649.png" alt="Close-up view of freshly brewed coffee"
-                title="Freshly brewed coffee captured in detail" width="1000" height="649">
-            <figcaption class="offscreen">
-                Fresh coffee, up close&mdash;rich texture and warm tones
+        <figure class="hero__figure">
+            <img class="hero__img" src="img/coffee-up-close-2000x1298.png"
+                alt="Close-up of a freshly brewed coffee, deep and rich in color" width="2000" height="1298">
+            <figcaption class="sr-only">
+                Fresh coffee, up close — rich texture and warm tones
             </figcaption>
         </figure>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Come find us</p>
+            <h2 class="hero__heading">Contact</h2>
+            <p class="hero__sub">Questions, feedback, or just want to say hello — we read every message.</p>
+        </div>
     </section>
 
     <main class="main">
-        <article class="main__article">
-            <h2>Visit CoffeeScript Café</h2>
-            <address>
-                CoffeeScript Café<br>
-                123 DevBrew St.<br>
-                Bonifacio Global City, Taguig<br>
-                Metro Manila 1634<br>
-                <br>
-                Phone: <a href="tel:+639171234567">+63 917 123 4567</a>
+        <article class="main__article contact-info">
+            <header class="section-header">
+                <p class="section-header__eyebrow">Where to find us</p>
+                <h2 class="section-header__heading">Visit CoffeeScript Café</h2>
+                <div class="section-header__rule" aria-hidden="true"></div>
+            </header>
+
+            <address class="contact-info__address">
+                <p>123 DevBrew St.<br>
+                    Bonifacio Global City, Taguig<br>
+                    Metro Manila 1634</p>
+                <p>
+                    Phone: <a href="tel:+639171234567">+63 917 123 4567</a>
+                </p>
             </address>
         </article>
-        <article class="main__article contact">
-            <h2 class="contact__h2">Submit Feedback</h2>
 
-            <form class="contact__form" action="https://httpbin.org/get" method="get">
-                <fieldset class="contact__fieldset">
-                    <legend class="offscreen">Provide your thoughts, suggestions, or questions</legend>
-                    <p class="contact__p">
-                        <label class="contact__label" for="name">Name:</label>
-                        <input class="contact__input" type="text" name="name" id="name" placeholder="Your name"
-                            required>
-                    </p>
-                    <p class="contact__p">
-                        <label class="contact__label" for="email">Email:</label>
-                        <input class="contact__input" type="email" name="email" id="email" placeholder="Your email"
-                            required>
-                    </p>
-                    <p class="contact__p">
-                        <label class="contact__label" for="message">Your Message:</label>
-                        <br>
-                        <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
-                            placeholder="Type your message here..."></textarea>
-                    </p>
+        <article class="main__article contact-form">
+            <header class="section-header">
+                <p class="section-header__eyebrow">Drop us a line</p>
+                <h2 class="section-header__heading">Send a Message</h2>
+                <div class="section-header__rule" aria-hidden="true"></div>
+                <p class="section-header__desc">We aim to respond within one business day.</p>
+            </header>
+
+            <form class="contact-form__form" action="https://httpbin.org/get" method="get">
+                <fieldset class="contact-form__fieldset">
+                    <legend class="sr-only">Your details and message</legend>
+
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="name">Name</label>
+                        <input class="contact-form__input" type="text" id="name" name="name" placeholder="Your name"
+                            autocomplete="name" required>
+                    </div>
+
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="email">Email</label>
+                        <input class="contact-form__input" type="email" id="email" name="email"
+                            placeholder="your@email.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="message">Message</label>
+                        <textarea class="contact-form__textarea" id="message" name="message" rows="8"
+                            placeholder="What's on your mind?" required></textarea>
+                    </div>
+
                 </fieldset>
-                <fieldset class="contact__fieldset button-container">
-                    <button class="contact__button" type="submit">Send</button>
-                    <button class="contact__button" type="reset">Reset</button>
+
+                <fieldset class="contact-form__fieldset contact-form__actions">
+                    <legend class="sr-only">Form actions</legend>
+                    <button class="contact-form__btn contact-form__btn--primary" type="submit">Send message</button>
+                    <button class="contact-form__btn contact-form__btn--ghost" type="reset">Clear</button>
                 </fieldset>
             </form>
         </article>
-        <p class="center">
-            <a href="#">Back To Top</a>
+
+        <p class="back-top">
+            <a href="#top">Back to top &uarr;</a>
         </p>
     </main>
+
     <footer class="footer">
-        <p>
-            <span class="nowrap">Copyright &copy; <time id="year" datetime="2025">2025</time></span>
-            <span class="nowrap">CoffeeScript Café</span>
-        </p>
+        <div class="footer__inner">
+            <p class="footer__copy">
+                &copy; <time id="year" datetime="2025">2025</time>
+                <span class="footer__sep" aria-hidden="true">&middot;</span>
+                CoffeeScript Café
+            </p>
+        </div>
     </footer>
 </body>
 

@@ -6,124 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="JJ Ginon">
     <meta name="description"
-        content="CoffeeScript Café serves handcrafted coffee in a space designed for clarity, comfort, and creative flow—perfect for refactoring your day.">
-    <title>CoffeeScript Café &ndash; A Place to Refactor Your Day</title>
+        content="CoffeeScript Café — specialty coffee, handpicked pastries, and a space designed for people who appreciate things done right.">
+    <title>CoffeeScript Café</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__h1">CoffeeScript Café</h1>
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li>
-                    <a href="#menu">Menu</a>
-                </li>
-                <li>
-                    <a href="hours.html">Hours</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__inner">
+            <p class="header__brand">
+                CoffeeScript <span class="header__brand-accent">Café</span>
+            </p>
+            <nav class="header__nav" aria-label="Primary navigation">
+                <ul class="header__nav-list">
+                    <li><a class="header__nav-link header__nav-link--active" href="/">Home</a></li>
+                    <li><a class="header__nav-link" href="hours.html">Hours</a></li>
+                    <li><a class="header__nav-link" href="contact.html">Contact</a></li>
+                    <li><a class="header__nav-link" href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="hero">
-        <h2 class="hero__h2">Welcome!</h2>
-        <figure>
-            <img src="img/coffee-and-croissant-1000x667.png" alt="Hot coffee and croissant on a plate"
-                title="Enjoy a warm cup of coffee with a fresh croissant" width="1000" height="667">
-            <figcaption class="offscreen">
+        <figure class="hero__figure">
+            <img class="hero__img" src="img/coffee-and-croissant-2000x1334.png"
+                alt="A warm cup of coffee beside a freshly baked croissant on a wooden table" width="2000"
+                height="1334">
+            <figcaption class="sr-only">
                 A cozy pairing of hot coffee and a buttery croissant
             </figcaption>
         </figure>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Est. 2025 &nbsp;&middot;&nbsp; Bonifacio Global City</p>
+            <h2 class="hero__heading">
+                Where every cup<br>is <em>well&#8209;crafted.</em>
+            </h2>
+            <p class="hero__sub">Specialty coffee, handpicked pastries, and a space built for people who appreciate
+                things done right.</p>
+            <a class="hero__cta" href="#menu">View our menu</a>
+        </div>
     </section>
 
     <main class="main">
         <article id="menu" class="main__article menu">
-            <h2 class="menu__h2">CoffeeScript Café Menu</h2>
-            <table class="menu__container">
-                <caption class="offscreen">Refactor Your Drink</caption>
-                <thead>
-                    <tr>
-                        <th class="menu__header" scope="col">Drink</th>
-                        <th class="menu__header" scope="col">Size</th>
-                        <th class="menu__header" scope="col">Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th class="menu__item menu__cf" scope="row" rowspan="3">
-                            Java Coffee
-                        </th>
-                        <td class="menu__item">Tall</td>
-                        <td class="menu__item">&#8369;120</td>
-                    </tr>
-                    <tr>
-                        <td class="menu__item">Grande</td>
-                        <td class="menu__item">&#8369;150</td>
-                    </tr>
-                    <tr>
-                        <td class="menu__item">Venti</td>
-                        <td class="menu__item">&#8369;180</td>
-                    </tr>
-                    <tr>
-                        <th class="menu__item menu__fr" scope="row" rowspan="3">
-                            ByteBlend Frappe
-                        </th>
-                        <td class="menu__item">Tall</td>
-                        <td class="menu__item">&#8369;160</td>
-                    </tr>
-                    <tr>
-                        <td class="menu__item">Grande</td>
-                        <td class="menu__item">&#8369;190</td>
-                    </tr>
-                    <tr>
-                        <td class="menu__item">Venti</td>
-                        <td class="menu__item">&#8369;220</td>
-                    </tr>
-                    <tr>
-                        <th class="menu__item menu__mt" scope="row" rowspan="3">
-                            BubbleSort Milk Tea
-                        </th>
-                        <td class="menu__item">Tall</td>
-                        <td class="menu__item">&#8369;130</td>
-                    </tr>
-                    <tr>
-                        <td class="menu__item">Grande</td>
-                        <td class="menu__item">&#8369;160</td>
-                    </tr>
-                    <tr>
-                        <td class="menu__item">Venti</td>
-                        <td class="menu__item">&#8369;190</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="menu__item menu__ds" colspan="3">
-                            Queue-issant &amp; ParsePasta &#8369;275
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
+            <header class="section-header">
+                <p class="section-header__eyebrow">What we brew</p>
+                <h2 class="section-header__heading">The Menu</h2>
+                <div class="section-header__rule" aria-hidden="true"></div>
+                <p class="section-header__desc">Every item is made to order. No scripts, no shortcuts.</p>
+            </header>
+
+            <div class="menu__grid">
+                <article class="menu__card" aria-label="Java Coffee">
+                    <span class="menu__card-tag">Hot &sol; Iced</span>
+                    <h3 class="menu__card-name">Java Coffee</h3>
+                    <p class="menu__card-desc">Single-origin drip, clean and direct. The foundation everything else is
+                        built on.</p>
+                    <ul class="menu__card-sizes" aria-label="Sizes and prices">
+                        <li class="menu__card-row">
+                            <span class="menu__card-size">Tall</span>
+                            <span class="menu__card-price">&#8369;120</span>
+                        </li>
+                        <li class="menu__card-row">
+                            <span class="menu__card-size">Grande</span>
+                            <span class="menu__card-price">&#8369;150</span>
+                        </li>
+                        <li class="menu__card-row">
+                            <span class="menu__card-size">Venti</span>
+                            <span class="menu__card-price">&#8369;180</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="menu__card" aria-label="ByteBlend Frappe">
+                    <span class="menu__card-tag">Cold</span>
+                    <h3 class="menu__card-name">ByteBlend Frappe</h3>
+                    <p class="menu__card-desc">Cold-blended espresso, dark chocolate, and cream — rich, layered, no
+                        bugs.</p>
+                    <ul class="menu__card-sizes" aria-label="Sizes and prices">
+                        <li class="menu__card-row">
+                            <span class="menu__card-size">Tall</span>
+                            <span class="menu__card-price">&#8369;160</span>
+                        </li>
+                        <li class="menu__card-row">
+                            <span class="menu__card-size">Grande</span>
+                            <span class="menu__card-price">&#8369;190</span>
+                        </li>
+                        <li class="menu__card-row">
+                            <span class="menu__card-size">Venti</span>
+                            <span class="menu__card-price">&#8369;220</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="menu__card" aria-label="BubbleSort Milk Tea">
+                    <span class="menu__card-tag">Cold</span>
+                    <h3 class="menu__card-name">BubbleSort Milk Tea</h3>
+                    <p class="menu__card-desc">Premium loose-leaf tea, house milk blend, and tapioca pearls — sorted to
+                        perfection.</p>
+                    <ul class="menu__card-sizes" aria-label="Sizes and prices">
+                        <li class="menu__card-row">
+                            <span class="menu__card-size">Tall</span>
+                            <span class="menu__card-price">&#8369;130</span>
+                        </li>
+                        <li class="menu__card-row">
+                            <span class="menu__card-size">Grande</span>
+                            <span class="menu__card-price">&#8369;160</span>
+                        </li>
+                        <li class="menu__card-row">
+                            <span class="menu__card-size">Venti</span>
+                            <span class="menu__card-price">&#8369;190</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="menu__dessert">
+                <div class="menu__dessert-left">
+                    <span class="menu__dessert-label">Pairs well with anything</span>
+                    <span class="menu__dessert-names">
+                        Queue&#8209;issant &amp; ParsePasta
+                        <em>— baked fresh daily</em>
+                    </span>
+                </div>
+                <span class="menu__dessert-price">&#8369;275</span>
+            </div>
         </article>
 
-        <p class="center">
-            <a href="#">Back To Top</a>
+        <p class="back-top">
+            <a href="#top">Back to top &uarr;</a>
         </p>
     </main>
-    <hr>
+
     <footer class="footer">
-        <p>
-            <span class="nowrap">Copyright &copy; <time id="year" datetime="2025">2025</time></span>
-            <span class="nowrap">CoffeeScript Café</span>
-        </p>
+        <div class="footer__inner">
+            <p class="footer__copy">
+                &copy; <time id="year" datetime="2025">2025</time>
+                <span class="footer__sep" aria-hidden="true">&middot;</span>
+                CoffeeScript Café
+            </p>
+        </div>
     </footer>
 </body>
 
