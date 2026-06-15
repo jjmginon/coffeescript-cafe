@@ -1,22 +1,17 @@
 # CoffeeScript Café ☕📜
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c593ab57-24a6-4365-bb60-c918176562f1/deploy-status)](https://app.netlify.com/projects/coffeescript-cafe/deploys)
-
-CoffeeScript Café is a beginner‑friendly HTML5 & CSS project inspired by [Dave Gray’s HTML5 Website Project for Beginners](https://youtu.be/T5PD8ofhiug?si=Tr1ZCSGN8KxLxA9Y) and [CSS Complete Project for Beginners](https://youtu.be/cMN2Odm5ieA?si=Cn2CLjz7s1Kx3RXS).  
-While the format follows his teaching style, all content (menu items, images, copywriting, and branding) is original — designed to showcase accessibility‑first development, performance‑optimized styling, and recruiter‑friendly polish.
+CoffeeScript Café is a fictional coffee shop website rebuilt in 2025 with a modern design system, accessibility‑first structure, and performance‑optimized styling. Originally inspired by beginner tutorials, the project has since evolved into a fully independent showcase of front‑end craftsmanship — blending semantic HTML, responsive CSS, and clean JavaScript into a cohesive user experience.
 
 ---
 
 ## 🌐 Project Overview
 
-CoffeeScript Café is a fictional coffee shop website built with:
+This site demonstrates how a simple concept can be elevated into a professional web project:
 
-- **Semantic HTML5** for clarity and accessibility
-- **Responsive CSS** with variables, grid, flexbox, and media queries
-- **JavaScript** for dynamic year updates in the footer
-- **Original content** (menu, hours, contact form, trivia, imagery)
-
-The site demonstrates best practices in web fundamentals while adding creative flair and thematic consistency.
+- **Semantic HTML5** for clarity, accessibility, and maintainability
+- **Responsive CSS** with variables, grid, flexbox, and scroll‑driven animations
+- **JavaScript (ES6)** for dynamic enhancements like auto‑updating footer content
+- **Original content and branding** — coffee‑and‑code themed menu items, custom imagery, and narrative copywriting
 
 ---
 
@@ -42,21 +37,19 @@ CoffeeScript-Cafe/
 
 ---
 
-## ✨ Features
+## ✨ Highlights
 
-- **Accessibility-first design**
-  - Semantic elements (`header`, `nav`, `main`, `article`, `footer`)
-  - `alt` text, `figcaption`, `aria`-friendly structure
-  - Keyboard focus styles and smooth navigation
-- **Responsive layout**
-  - CSS Grid for menu table
-  - Flexbox for navigation and buttons
-  - Media queries for typography and hero styling
-- **Dynamic footer**
-  - JavaScript auto-updates copyright year
-- **Original branding**
-  - Coffee & code themed menu items (e.g., _Java Coffee_, _ByteBlend Frappe_, _BubbleSort Milk Tea_)
-  - Playful trivia and thematic copywriting
+- **Accessibility‑first design**  
+  Semantic elements, descriptive alt text, ARIA‑friendly structure, and focus styles for keyboard users.
+
+- **Responsive layout**  
+  Grid and flexbox for adaptive sections, fluid typography, and media queries for small and large screens.
+
+- **Modern styling**  
+  CSS variables, dark‑mode support, scroll‑driven animations, and component‑based class naming.
+
+- **Original branding**  
+  Coffee‑and‑code themed menu items (_Java Coffee_, _ByteBlend Frappe_, _BubbleSort Milk Tea_), playful trivia, and thematic copywriting.
 
 ---
 
@@ -74,28 +67,21 @@ CoffeeScript-Cafe/
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies
 
-- **HTML5**
-- **CSS3**
-  - Variables
-  - Grid & Flexbox
-  - Animations & transitions
-- **JavaScript (ES6)**
+- **HTML5** — semantic structure and accessibility
+- **CSS3** — variables, grid, flexbox, transitions, animations
+- **JavaScript (ES6)** — dynamic footer year update
 
 ---
 
-## 📖 Learning Context
+## 📖 Context
 
-This project was built as part of a structured learning journey:
-
-- Following Dave Gray’s beginner tutorials for HTML5 & CSS
-- Expanding with original content to demonstrate creativity and technical mastery
-- Practicing accessibility, responsive design, and recruiter‑friendly presentation
+CoffeeScript Café began as a learning exercise but has been refactored into a modern showcase of front‑end development. The project demonstrates how foundational tutorials can evolve into original, scalable, and professional web experiences — emphasizing accessibility, performance, and design clarity.
 
 ---
 
 ## 👨‍💻 Author
 
 **JJ Ginon**  
-Freelance Front-End Developer | Accessibility-first, performance-optimized, recruiter-friendly web projects
+Front‑end Web Developer | Accessibility‑first, performance‑optimized, modern web projects
