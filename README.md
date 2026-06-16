@@ -1,6 +1,6 @@
 # CoffeeScript Café ☕📜
 
-CoffeeScript Café is a fictional coffee shop website rebuilt in 2025 with a modern design system, accessibility‑first structure, and performance‑optimized styling. Originally inspired by beginner tutorials, the project has since evolved into a fully independent showcase of front‑end craftsmanship — blending semantic HTML, responsive CSS, and clean JavaScript into a cohesive user experience.
+CoffeeScript Café is a fictional coffee shop website redesigned in 2026 with a modern design system, accessibility‑first structure, and performance‑optimized styling. Originally inspired by beginner tutorials, the project has since evolved into a fully independent showcase of front‑end craftsmanship — blending semantic HTML, responsive CSS, and clean JavaScript into a cohesive user experience.
 
 ---
 
