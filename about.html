@@ -37,9 +37,13 @@
 
     <section class="hero">
         <figure class="hero__figure">
-            <img class="hero__img" src="img/bon-appetit-2000x1334.png"
-                alt="A spread of freshly baked pastries — croissant, cherry cake, bread roll, and cinnamon roll — alongside a cup of coffee"
-                width="2000" height="1334">
+            <picture>
+                <source srcset="img/bon-appetit-2000x1334.avif" type="image/avif">
+                <source srcset="img/bon-appetit-2000x1334.webp" type="image/webp">
+                <img class="hero__img" src="img/bon-appetit-2000x1334.png"
+                    alt="A spread of freshly baked pastries — croissant, cherry cake, bread roll, and cinnamon roll — alongside a cup of coffee"
+                    width="2000" height="1334" loading="lazy">
+            </picture>
             <figcaption class="sr-only">
                 A tempting assortment of coffee and pastries: croissant, cake with cherry, bread roll, and cinnamon roll
             </figcaption>

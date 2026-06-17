@@ -37,9 +37,13 @@
 
     <section class="hero">
         <figure class="hero__figure">
-            <img class="hero__img" src="img/coffee-and-croissant-2000x1334.png"
-                alt="A warm cup of coffee beside a freshly baked croissant on a wooden table" width="2000"
-                height="1334">
+            <picture>
+                <source srcset="img/coffee-and-croissant-2000x1334.avif" type="image/avif">
+                <source srcset="img/coffee-and-croissant-2000x1334.webp" type="image/webp">
+                <img class="hero__img" src="img/coffee-and-croissant-2000x1334.png"
+                    alt="A warm cup of coffee beside a freshly baked croissant on a wooden table" width="2000"
+                    height="1334" loading="lazy">
+            </picture>
             <figcaption class="sr-only">
                 A cozy pairing of hot coffee and a buttery croissant
             </figcaption>
