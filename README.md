@@ -20,19 +20,20 @@ This site demonstrates how a simple concept can be elevated into a professional 
 ```
 CoffeeScript-Cafe/
 │
-├── index.html        # Homepage with hero image and menu
-├── hours.html        # Store hours page
-├── contact.html      # Contact info and feedback form
-├── about.html        # About page with trivia section
+├── index.html             # Homepage with hero image and menu
+├── hours.html             # Store hours page
+├── contact.html           # Contact info and feedback form
+├── about.html             # About page with trivia section
 │
 ├── css/
-│   └── styles.css    # Global styles, variables, layout, animations
+│   └── styles.css         # Global styles, variables, layout, animations
 │
 ├── js/
-│   └── script.js     # Footer year auto-update
+│   └── script.js          # Footer year auto-update
 │
-├── img/              # Project images (coffee, pastries, hero banners)
-└── favicon.ico       # Site icon
+├── img/                   # Coffee, pastries, hero banners, etc.
+│
+└── favicon/               # Favicon and PWA assets
 ```
 
 ---
