@@ -1,5 +1,7 @@
 # CoffeeScript Café ☕📜
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c593ab57-24a6-4365-bb60-c918176562f1/deploy-status)](https://app.netlify.com/projects/coffeescript-cafe/deploys)
+
 CoffeeScript Café is a fictional coffee shop website redesigned in 2026 with a modern design system, accessibility‑first structure, and performance‑optimized styling. Originally inspired by beginner tutorials, the project has since evolved into a fully independent showcase of front‑end craftsmanship — blending semantic HTML, responsive CSS, and clean JavaScript into a cohesive user experience.
 
 ---
@@ -18,7 +20,7 @@ This site demonstrates how a simple concept can be elevated into a professional 
 ## 📂 File Structure
 
 ```
-CoffeeScript-Cafe/
+coffeescript-cafe/
 │
 ├── index.html             # Homepage with hero image and menu
 ├── hours.html             # Store hours page
