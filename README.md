@@ -4,6 +4,8 @@
 
 CoffeeScript Café is a fictional coffee shop website redesigned in 2026 with a modern design system, accessibility‑first structure, and performance‑optimized styling. Originally inspired by beginner tutorials, the project has since evolved into a fully independent showcase of front‑end craftsmanship — blending semantic HTML, responsive CSS, and clean JavaScript into a cohesive user experience.
 
+**Live Demo:** [coffeescript-cafe.netlify.app](https://coffeescript-cafe.netlify.app/)
+
 ---
 
 ## 🌐 Project Overview
@@ -60,7 +62,7 @@ coffeescript-cafe/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/CoffeeScript-Cafe.git
+   git clone https://github.com/jjmginon/CoffeeScript-Cafe.git
    ```
 2. Navigate into the project folder:
    ```bash
