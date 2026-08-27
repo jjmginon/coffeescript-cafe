@@ -62,11 +62,11 @@ coffeescript-cafe/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/jjmginon/CoffeeScript-Cafe.git
+   git clone https://github.com/jjmginon/coffeescript-cafe.git
    ```
 2. Navigate into the project folder:
    ```bash
-   cd CoffeeScript-Cafe
+   cd coffeescript-cafe
    ```
 3. Open `index.html` in your browser to view the site.
 
